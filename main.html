@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Aiden's portfolio website">
+        <meta name="keywords" content="code, software, webdesign, digital, art, commision, drawing,">
+        <meta name="author" content="AidenB">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--GOOGLE FONT 'Source Code Pro'-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+        
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <title>Aiden Buxton's Portfolio</title>
+    </head>
+
+    <body>
+
+        <div class="hero pg1">
+            <div class="contentMiddle">
+                <h1>
+                    Aiden<br>Buxton
+                </h1>
+                <hr style="background-color: white;">
+                <ul>
+                    <li><a href="#ProjectPortfolio">Project Portfolio</a></li>
+                    <li><a href="#SkillsEducation">Skills & Education</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!--<div class="pageTurn"></div>-->
+
+        <div class="hero pg2">
+            <div class="contentTop text-center">
+                Click one to expand:
+                <div class="panel-group picAccordion" id="expAccordion">
+                    <!--accord1-->
+                    <div class="panel panelWebDesign">
+                        <div class="panel-heading">
+                          <h1 class="bold text-center panelaccord" data-target="#panel-2" data-toggle="collapse">&#9656;Web Design&#9666;</h1>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel-2">
+                          <div class="row text-center bg-secondary text-white m-0">
+                            <div class="col-sm-5 m-auto">
+                              <article>
+                              <h2 class="bold">Box Tower</h2>
+                              <h4>JavaScript Focused</h4>
+                              <p>Box Tower was a concept project with an emphasis on using Javascript for form input and .</p>
+                            </article>
+                            </div>
+                            <div class="col-sm-5 m-5">
+                              <img class="image-responsive" src="image/blenderThumb.jpg" alt="Picture of low-poly blender characters">
+                            </div>
+                            
+                          </div>
+
+                          <div class="row text-center bg-secondary text-white m-0">
+                            <div class="col-sm-5 m-auto">
+                              <article>
+                              <h2 class="bold">Vue Garden</h2>
+                              <h4>Vue based Application</h4>
+                              <p>Multiple finished projects ranging from low poly to high detail sculptures and models including texture work and lighting.</p>
+                            </article>
+                            </div>
+                            <div class="col-sm-5 m-5">
+                              <img class="image-responsive" src="image/blenderThumb.jpg" alt="Picture of low-poly blender characters">
+                            </div>
+                            
+                          </div>
+
+                          <div class="row text-center bg-secondary text-white m-0">
+                            <div class="col-sm-5 m-auto">
+                              <article>
+                              <h2 class="bold">Blender</h2>
+                              <p>Multiple finished projects ranging from low poly to high detail sculptures and models including texture work and lighting.</p>
+                            </article>
+                            </div>
+                            <div class="col-sm-5 m-5">
+                              <img class="image-responsive" src="image/blenderThumb.jpg" alt="Picture of low-poly blender characters">
+                            </div>
+                            
+                          </div>
+                        </div>
+                    </div>
+                    
+                    <!--accord2
+                    <div class="panel panelChoice padbod">
+                        <div class="panel-heading">
+                          <h1 class="bold text-center panelaccord" data-target="#panel-3" data-toggle="collapse">JavaScript</h1>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel-3">
+                          <div class="row text-center bg-black text-white m-0">
+                            <div class="col-sm-5 m-5">
+                              <img class="image-responsive" src="image/choiceThumb.jpg" alt="Image of the code used for choicescript">
+                            </div>
+                            <div class="col-sm-5 m-auto">
+                              <article>
+                              <h2 class="bold">ChoiceScript</h2>
+                              <p>ChoiceScript is a programing language designed for writing choice-based games similar to the classic Choose Your Own Adventure books. The simple tools can be stretched and used to build more complicated than expected functions such as randomized elements, procedural generation, and animated features.</p>
+                            </article>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    -->
+
+                    <!--accord3-->
+                    <div class="panel panelDigitalArt">
+                        <div class="panel-heading">
+                          <h1 class="bold text-center panelaccord" data-target="#panel-1" data-toggle="collapse">&#9656;Digital Art&#9666;</h1>
+                        </div>
+                        <div class="panel-collapse collapse" id="panel-1">
+                          <div class="row text-center"><div class="col-sm-12"><h3>Finished Pieces</h3></div></div>
+                          <div class="row text-center mb-5">
+                            <div class="col-sm-3">
+                              <h2 class="bold">Fighter</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#froModal"><img src="image/imgExp/thumb/Tfro.jpg" alt="pic1"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="froModal" tabindex="-1" aria-labelledby="froModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/Frow4.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">5/21</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Sid</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#sidModal"><img src="image/imgExp/thumb/Tsid.jpg" alt="pic2"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="sidModal" tabindex="-1" aria-labelledby="sidModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/sidgun.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">6/20</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Bud</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#budModal"><img src="image/imgExp/thumb/Tbud.jpg" alt="modal3"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="budModal" tabindex="-1" aria-labelledby="budModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/bud.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">7/20</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Bench</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#benchModal"><img src="image/imgExp/thumb/Tbench.jpg" alt="pic2"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="benchModal" tabindex="-1" aria-labelledby="benchModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/Bench.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">7/20</p>
+                            </div>
+                          </div>
+                          <div class="row text-center mb-5">
+                            <div class="col-sm-3">
+                              <h2 class="bold">Floofy Barbarian</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#haModal"><img src="image/imgExp/thumb/Tha.jpg" alt="pic1"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="haModal" tabindex="-1" aria-labelledby="haModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/haru2.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">5/20</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Fairy</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#pikModal"><img src="image/imgExp/thumb/Tp.jpg" alt="pic2"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="pikModal" tabindex="-1" aria-labelledby="pikModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/pikel2.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">7/20</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Winter Death</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#winModal"><img src="image/imgExp/thumb/Tfan.jpg" alt="modal3"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="winModal" tabindex="-1" aria-labelledby="winModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/fanwin.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">3/20</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Vow</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#vowModal"><img src="image/imgExp/thumb/Tvow3.jpg" alt="pic2"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="vowModal" tabindex="-1" aria-labelledby="vowModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/vow3.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">4/20</p>
+                            </div>
+                          </div>
+                          <div class="row text-center"><div class="col-sm-12"><h3>Sketches & Misc</h3></div></div>
+                          <div class="row text-center mb-5">
+                            
+                            <div class="col-sm-3">
+                              <h2 class="bold text-center">Underwater</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#unModal"><img src="image/imgExp/thumb/Tu.jpg" alt="Underwater"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="unModal" tabindex="-1" aria-labelledby="unModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/underwater.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">date</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Abdomen</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#gabModal"><img src="image/imgExp/thumb/Tgab.jpg" alt="pic2"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="gabModal" tabindex="-1" aria-labelledby="gabModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/gab.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">date</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Vel</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#velModal"><img src="image/imgExp/thumb/Tveal.jpg" alt="modal3"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="velModal" tabindex="-1" aria-labelledby="velModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/veal.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">date</p>
+                            </div>
+                            <div class="col-sm-3">
+                              <h2 class="bold">Cold Warrior</h2>
+                              <!--Modal Start-->
+                              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#yukModal"><img src="image/imgExp/thumb/Tyuki.jpg" alt="pic2"></button>
+                              <!--modal-->
+                              <div class="modal fade" id="yukModal" tabindex="-1" aria-labelledby="yukModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                    <div class="modal-header bg-dark">
+                                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                          
+                                    <!--ModalBody-->
+                                    <div class="modal-body">
+                                      <img class="rounded-0 m-0 art" src="image/imgExp/yuki.png">
+                                      </div>
+                                      </div>
+                                      </div>
+                              </div><!--Modal End-->
+                              <p class="descp lead mt-2">date</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <!--end-->
+                  </div>
+            </div>
+            
+        </div>
+
+        <div class="hero pg3">
+            <div class="contentMiddle">
+                <h1>About</h1>
+            </div>
+        </div>
+
+    </body>
+
+
+
+</html>
