@@ -18,7 +18,7 @@ a:hover {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
 }
 
 .icons {
@@ -50,6 +50,12 @@ i {
     background-color:rgba(0, 0, 0, 0.479);
 }
 
+footer {
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 0;
+    
+}
+
 /* CLASS ELEMENTS */
 .panel {
     text-align: center;
@@ -75,8 +81,16 @@ i {
 }
 
 .thumb {
-    max-width: 50vw;
-    margin-top: 10px;
+    max-width: 40vw;
+}
+
+.foot {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+    color: rgb(0, 0, 0);
 }
 
 /* PAGES */
@@ -91,15 +105,16 @@ i {
     text-shadow: 0px 0px 8px black;
     color: white;
     text-align: center;
+    z-index: 3;
 }
 .pg2 {
-    background-image: url(../img/tower1.jpg);
+    background: url(../img/light1.jpg) no-repeat top left;
     background-size: cover;
     position: absolute;
-    height: 200%;
-    top:0vh;
-    left: 100vw;
+    height: 110vh;
+    top:100vh;
     color:white;
+    z-index: 1;
 }
 .panel-heading {
     background-color:rgba(0, 0, 0, 0.479);
@@ -107,11 +122,13 @@ i {
 }
 
 .pg3 {
-    background: url(../img/light1.jpg) no-repeat top left;
+    background: url(../img/tower1.jpg);
     background-size: cover;
     position: absolute;
-    top:100vh;
+    top:210vh;
+    height: auto;
     color:white;
+    z-index: 1;
 }
 
 .pg3 .contentMidBlock {
@@ -124,13 +141,16 @@ i {
     background-color: rgb(0, 0, 0);
     background-size: cover;
     position: absolute;
-    top:200vh;
+    top:300vh;
     color:rgb(255, 255, 255);
+    z-index: 1;
 }
 
 .pg5 {
     position: absolute;
     background-color: white;
-    top: 300vh;
-    
+    top: 400vh;
+    z-index: 1;
+    width: 100vw;
+
 }
