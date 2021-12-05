@@ -47,11 +47,7 @@ i {
 }
 
 .navCorner {
-    position: fixed;
-    top:0;
-    left:100vw;
-    z-index: 1;
-    background-color: black;
+    background-color:rgba(0, 0, 0, 0.479);
 }
 
 /* CLASS ELEMENTS */
@@ -94,7 +90,7 @@ i {
     background-image: url(../img/tower1.jpg);
     background-size: cover;
     position: absolute;
-    height: 200vh;
+    height: 200%;
     top:0vh;
     left: 100vw;
     color:white;
@@ -105,7 +101,7 @@ i {
 }
 
 .pg3 {
-    background-image: url(../img/light1.jpg);
+    background: url(../img/light1.jpg) no-repeat top left;
     background-size: cover;
     position: absolute;
     top:100vh;
