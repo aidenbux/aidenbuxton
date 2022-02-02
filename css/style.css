@@ -1,0 +1,190 @@
+/* Base Css */
+html {
+    font-family: 'Source Code Pro';
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-height: 80vh;
+    max-width: 80vw;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 4px;
+}
+a, a:visited {color:white;
+                text-decoration: none;}
+a:hover {
+    text-shadow: 1px 1px 3px black;
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 25px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+footer {
+    font-size: larger;
+    color: white;
+    position: fixed;
+    top: 1vh;
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    z-index: 0;
+    
+}
+
+/* CLASS ELEMENTS */
+.panel {
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    left:0;
+}
+
+.contentMiddle {
+    margin-top: 20vh;
+    padding: 5%;
+}
+.contentMidBlock {
+    display: block;
+    
+    margin: 15%;
+    margin-top: 20%;
+    
+}
+
+.contentTop {
+    margin-top: 14vh;
+}
+
+.thumb {
+    max-width: 20vw;
+}
+
+.foot {
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    top: 300vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1vh;
+    color: rgb(0, 0, 0);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 19; /* Sit on top */
+    padding-top: 5vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width:min-content;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* PAGES */
+
+.pg1 {
+    background: url(../img/foggy.jpg) no-repeat bottom left;
+    background-size: cover;
+    
+    position: absolute;
+    
+    top:0;
+    text-shadow: 0px 0px 8px black;
+    color: white;
+    text-align: center;
+    z-index: 3;
+}
+
+.pg2 {
+    position: absolute;
+    height: 100vh;
+    top:100vh;
+    color:white;
+}
+
+.pg3 {
+    background: url(../img/yggof.jpg) no-repeat top left;
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    top:200vh;
+    color:white;
+    
+}
+
+.pg3 .contentMidBlock {
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding:25px;
+}
+
+.icons {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: solid 2px black;
+    border-radius: 25px;
+    width:60%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #About {
+      font-size:small;
+    }
+    .contentMidBlock {
+        display: block;
+        
+        margin: 5%;
+        margin-top: 20%;
+        
+    }
+}
