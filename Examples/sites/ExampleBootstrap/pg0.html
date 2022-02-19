@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template borrowed from: https://startbootstrap.com/theme/freelancer -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aver's portfolio website">
+    <meta name="keywords" content="digital, art, commision, drawing, code, software, webdesign">
+    <meta name="author" content="AVB">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--GOOGLE FONT 'Source Code Pro'-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        
+        <div class="mb-5 themecolor" id="sideline"></div>
+        <img id="sig" src="image/portrait.png" alt="Signature, 'Aver'">
+        <div class="bod">
+            <h2 class="text-black">Bootstrap Examples</h2>
+            <b>Accordians and Modals</b>
+        </div>
+    </header>
+
+    <main>
+
+    <!--Accordian-->
+
+    <div class="panel-group picAccordion" id="expAccordion">
+      <div class="panel panelHtml">
+        <div class="panel-heading">
+          <h1 class="bold text-left panelaccord" data-target="#panel-1" data-toggle="collapse">Digital Art</h1>
+        </div>
+        <div class="panel-collapse collapse ml-5" id="panel-1">
+          <div class="row text-center"><div class="col-sm-12"><h3>Finished Pieces</h3></div></div>
+          <div class="row text-center mb-5">
+            <div class="col-sm-4">
+              <h2 class="bold">Fighter</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#froModal"><img src="image/imgExp/thumb/Tfro.jpg" alt="pic1"></button>
+              <!--modal-->
+              <div class="modal fade" id="froModal" tabindex="-1" aria-labelledby="froModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/Frow4.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">5/21</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="bold">Sid</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#sidModal"><img src="image/imgExp/thumb/Tsid.jpg" alt="pic2"></button>
+              <!--modal-->
+              <div class="modal fade" id="sidModal" tabindex="-1" aria-labelledby="sidModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/sidgun.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">6/20</p>
+            </div>
+            
+            <div class="col-sm-4">
+              <h2 class="bold">Bench</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#benchModal"><img src="image/imgExp/thumb/Tbench.jpg" alt="pic2"></button>
+              <!--modal-->
+              <div class="modal fade" id="benchModal" tabindex="-1" aria-labelledby="benchModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/Bench.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">7/20</p>
+            </div>
+          </div>
+
+          <div class="row text-center mb-5">
+            <div class="col-sm-4">
+              <h2 class="bold">Floofy Barbarian</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#haModal"><img src="image/imgExp/thumb/Tha.jpg" alt="pic1"></button>
+              <!--modal-->
+              <div class="modal fade" id="haModal" tabindex="-1" aria-labelledby="haModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/haru2.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">5/20</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="bold">Fairy</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#pikModal"><img src="image/imgExp/thumb/Tp.jpg" alt="pic2"></button>
+              <!--modal-->
+              <div class="modal fade" id="pikModal" tabindex="-1" aria-labelledby="pikModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/pikel2.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">7/20</p>
+            </div>
+            
+            <div class="col-sm-4">
+              <h2 class="bold">Guy</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#vowModal"><img src="image/imgExp/thumb/Tte.jpg" alt="pic2"></button>
+              <!--modal-->
+              <div class="modal fade" id="vowModal" tabindex="-1" aria-labelledby="vowModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/test2m.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">4/20</p>
+            </div>
+          </div>
+          
+      </div>
+      
+      <!--accord2-->
+      <div class="panel panelBlender">
+        <div class="panel-heading">
+          <h1 class="bold text-left panelaccord" data-target="#panel-2" data-toggle="collapse">Sketches & Misc</h1>
+        </div>
+        <div class="panel-collapse collapse" id="panel-2">
+          <div class="row text-center"><div class="col-sm-12"><h3>Sketches & Misc</h3></div></div>
+          <div class="row text-center mb-5">
+            
+            <div class="col-sm-4">
+              <h2 class="bold text-center">Underwater</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#unModal"><img src="image/imgExp/thumb/Tu.jpg" alt="Underwater"></button>
+              <!--modal-->
+              <div class="modal fade" id="unModal" tabindex="-1" aria-labelledby="unModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/underwater.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">date</p>
+            </div>
+            
+            <div class="col-sm-4">
+              <h2 class="bold">Vel</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#velModal"><img src="image/imgExp/thumb/Tveal.jpg" alt="modal3"></button>
+              <!--modal-->
+              <div class="modal fade" id="velModal" tabindex="-1" aria-labelledby="velModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/veal.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">date</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="bold">Cold Warrior</h2>
+              <!--Modal Start-->
+              <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#yukModal"><img src="image/imgExp/thumb/Tyuki.jpg" alt="pic2"></button>
+              <!--modal-->
+              <div class="modal fade" id="yukModal" tabindex="-1" aria-labelledby="yukModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header bg-dark">
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+          
+                    <!--ModalBody-->
+                    <div class="modal-body">
+                      <img class="rounded-0 m-0 art" src="image/imgExp/yuki.png">
+                      </div>
+                      </div>
+                      </div>
+              </div><!--Modal End-->
+              <p class="descp lead mt-2">date</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br>
+    <br>
+    <p style="color:white;">hello?</p>
+    <br>
+    </main>
+    
+
+    <!--FOOTER-->
+  
+  <footer class="themecolor text-black fixed-bottom mt-5 mb-0">
+    <div class="container p-2">
+      <h2 class="text-center d-flex justify-content-around">
+        <a href="https://www.instagram.com/lambhidelh/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/aidenbux/aidenbux.github.io" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="#home"><i class="bi bi-arrow-up-square"></i></a>
+      </h2>
+      
+    </div>
+  </footer>
+
+</body>
+
+
+</html>
