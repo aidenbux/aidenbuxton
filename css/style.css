@@ -72,7 +72,7 @@ footer {
 .thumbbox {
     border: solid white 1px;
     border-radius: 25px;
-    max-height: 33vh;
+    
     max-width: 30vh;
     text-align: center;
 }
@@ -80,12 +80,12 @@ footer {
     background-color: rgb(15, 15, 15);
 }
 .foot {
-    position: absolute;
+    
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     left:0;
-    top: 300vh;
+    
     width: 100vw;
     background-color: rgb(255, 255, 255);
     padding-bottom: 1vh;
@@ -126,7 +126,7 @@ footer {
     background: url(../img/yggof.jpg) no-repeat top left;
     background-size: cover;
     position: absolute;
-    top:200vh;
+    top:210vh;
     color:white;
     
 }
@@ -169,7 +169,7 @@ footer {
     .contentMidBlock {
         
         margin: 10%;
-        margin-top: 14vh;
+        margin-top: 1vh;
         
     }
 }
@@ -181,7 +181,7 @@ footer {
     .contentMidBlock {
         
         margin: 5%;
-        margin-top: 14vh;
+        margin-top: 1vh;
         
     }
     .showIcons {
