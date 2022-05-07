@@ -4,11 +4,6 @@ html {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-img {
-    max-height: 80vh;
-    max-width: 80vw;
-}
 ul {
     list-style-type: none;
     padding: 0;
@@ -24,117 +19,82 @@ a:hover {
     border-radius: 25px;
 }
 
-body {
-    background-color: rgb(0, 0, 0);
-}
-
-footer {
-    font-size: larger;
-    color: white;
-    position: fixed;
-    top: 1vh;
-    width: 100vw;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.438);
-    z-index: 0;
+.splash-container {
     
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
 }
-
-/* CLASS ELEMENTS */
-.panel {
-    text-align: center;
-}
-
-.hero {
-    height: 100vh;
-    width: 100vw;
-    left:0;
-}
-
-.contentMiddle {
-    margin-top: 20vh;
-    padding: 5%;
-}
-.contentMidBlock {
-   margin-left: 25%;
-   margin-right: 25%;
-    
-}
-
-.contentTop {
-    margin-top: 1vh;
-}
-
-.thumb {
-    max-height: 20vh;
-    max-width: 20vw;
-}
-.thumbbox {
-    border: solid white 1px;
-    border-radius: 25px;
-    
-    max-width: 30vh;
-    text-align: center;
-}
-.thumbbox:hover {
-    background-color: rgb(15, 15, 15);
-}
-.foot {
-    
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left:0;
-    
-    width: 100vw;
-    background-color: rgb(255, 255, 255);
-    padding-bottom: 1vh;
-    color: rgb(0, 0, 0);
-}
-
-
-
-/* The Modal (background) */
-
-
-/* Modal Content */
-
-
-/* PAGES */
 
 .pg1 {
-    background: url(../img/foggy.png) no-repeat bottom left;
-    background-size: cover;
-    
-    position: absolute;
-    
-    top:0;
     text-shadow: 0px 0px 8px black;
     color: white;
     text-align: center;
-    z-index: 3;
-}
-
-.pg2 {
-    position: absolute;
-    top:100vh;
-    color:white;
-    width: 100vw;
-}
-
-.pg3 {
-    background: url(../img/yggof.jpg) no-repeat top left;
+    background: url(../img/yggof.jpg) no-repeat bottom left;
     background-size: cover;
+}
+.pg2 {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+.pg3 {
+    color: white;
+    background-color: white;
+    padding-top: 7%;
+    
+}
+.contentMiddle {
+    margin-top: 20vh;
+    margin-bottom: 0vh;
+    padding: 5%;
+}
+
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top:210vh;
-    color:white;
+    top: 90%;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: url(../img/blackfade.png) no-repeat bottom left;
+    background-size: cover;
+
+}
+.content {
+    padding: 1em 1em 3em;
+}
+
+.contentHigh {
+    margin-top: 7%;
+    
     
 }
 
-.pg3 .contentMidBlock {
+.contentMidBlock {
+    margin-left: 25%;
+    margin-right: 25%;
+    
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.616);
+    border: solid black 2px;
+    
+    background-color: rgba(0, 0, 0, 0.57);
     padding:25px;
+     
+ }
+
+.thumb{
+    border: solid white 1px;
+    margin: 5%;
+    border-radius: 3%;
+    text-align: center;
+    
 }
 
 .icons {
@@ -160,39 +120,86 @@ footer {
     padding: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 .showIcons2 {
     display: none;
 }
-
-@media only screen and (max-width: 1600px) {
-    .contentMidBlock {
-        
-        margin: 10%;
-        margin-top: 1vh;
-        
-    }
+.foot {
+    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    margin-top: 4%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1vh;
+    color: rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 600px) {
-    #About, #Projects {
-      font-size:small;
+@media (min-width: 48em) {
+
+    /* We increase the body font size */
+    body {
+        font-size: 16px;
+    }
+    .p2 .pg3{
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .contentMidBlock {
+        margin-left: 5%;
+        margin-right: 5%;
         
-        margin: 5%;
-        margin-top: 1vh;
+        border-radius: 25px;
+        border: solid black 2px;
         
+        background-color: rgba(0, 0, 0, 0.57);
+        padding:25px;
+         
+     }
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .home-menu {
+        text-align: left;
     }
-    .showIcons {
-        display: none;
+        .home-menu ul {
+            float: right;
+        }
+
+    /* We increase the height of the splash-container */
+/*    .splash-container {
+        height: 500px;
+    }*/
+
+    /* We decrease the width of the .splash, since we have more width
+    to work with */
+    .splash {
+        width: 50%;
+        height: 50%;
     }
-    .showIcons2 {
-        display: block;
+
+    .splash-head {
+        font-size: 250%;
     }
-    .thumbbox {
-        max-width: 25vw;
-        margin: 2vw;
+
+
+    /* We remove the border-separator assigned to .l-box-lrg */
+    .l-box-lrg {
         border: none;
+    }
+
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {
+        font-size: 300%;
     }
 }
