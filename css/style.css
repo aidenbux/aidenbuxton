@@ -94,7 +94,7 @@ a:hover {
     margin: 5%;
     border-radius: 3%;
     text-align: center;
-    
+    backdrop-filter: blur(1.5rem);
 }
 
 .icons {
