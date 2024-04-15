@@ -72,7 +72,7 @@ h4{
 .pg1 
 {
     max-width: 100vw;
-    min-height: 90vh;
+    min-height: 80vh;
     font-size: large;
     flex: 1;
     display: flex;
@@ -314,4 +314,14 @@ h4{
             rotate(-190deg);
         opacity: 0;
     }
+}
+
+@media (max-width: 42em) {
+
+    .pg1 .pagecontent{
+        width: auto;
+    }
+    #fallingleaves i:nth-of-type(5n) { -webkit-animation: falling1 9s 0s infinite; }
+    #fallingleaves i:nth-of-type(6n) { -webkit-animation: falling2 10s 0s infinite; }
+    #fallingleaves i:nth-of-type(7n) { -webkit-animation: falling3 8s 0s infinite; }
 }
